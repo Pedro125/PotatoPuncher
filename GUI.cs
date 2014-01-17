@@ -5,11 +5,17 @@ public class GUI : MonoBehaviour
 {
   //Variables
   
-  //Screen.height
+  public float top = (0.85)*Screen.height;
+  public float height = Screen.height - top;
+  
+  public float width = Screen.width/3;
   //Screen.width
   
   void OnGui()
   {
-    GUI.Box(new Rect(0,Screen.height-100,))//WIP
+    if (GUI.Box(new Rect(0,top,width,height),"Button One"))
+    {
+      
+    }
   }
 }
