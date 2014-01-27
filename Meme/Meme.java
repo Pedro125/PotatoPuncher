@@ -4,7 +4,7 @@ package meme;
  * @date January 27, 2014
 */
 
-public class Meme {
+public class Meme implements Comparable{
         private String memeName;
         private String knowYourMemeLink;
         private double popularity;
@@ -62,8 +62,9 @@ public class Meme {
             return type;
         }
         
-        public int compareTo(Meme other){
-            return memeName.compareTo(other.getMemeName());
+    @Override
+        public int compareTo(Object obj){
+            return memeName.compareTo(((Meme)obj).getMemeName());
         }
     
 }
