@@ -1,5 +1,10 @@
 package meme;
 
+/*
+    @author: Pedro Rivera
+    @date: 1/28/2014
+*/
+
 public class Location
 {
     private int xPos;
