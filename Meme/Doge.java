@@ -1,5 +1,10 @@
 package meme;
 
+/*
+    @author: Pedro Rivera
+    @date: 1/27/2014
+*/
+
 public class Doge extends Meme
 {
     private String[] captions;
