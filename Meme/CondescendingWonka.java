@@ -5,7 +5,7 @@
 
 package meme;
 
-public class CondescendingWonka extends Meme implements Comparable
+public class CondescendingWonka extends Meme
 {
     private String topCaption;
     private String bottomCaption;
