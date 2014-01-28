@@ -37,7 +37,7 @@ public class Doge extends Meme
         output += ". Doge says \"";
         for(int i=0;i<captions.length;i++)
         {
-            output+=(captions[i])+".";
+            output+=(captions[i])+". ";
         }
         output += "\"";
         return output;
