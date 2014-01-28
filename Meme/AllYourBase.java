@@ -5,7 +5,8 @@ package meme;
  * @author Kohl
  * @date January 27, 2014
  */
-public class AllYourBase extends Meme implements Comparable{
+public class AllYourBase extends Meme
+{
     
     private String version;
     private String caption;
