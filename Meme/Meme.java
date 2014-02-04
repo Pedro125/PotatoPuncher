@@ -4,6 +4,9 @@ package meme;
  * @version 1.0.2
  * @date January 27, 2014
 */
+/**
+ * A <code>Meme</code> represents an  instance of a Meme
+ */
 
 public class Meme implements Comparable{
         private String memeName;
