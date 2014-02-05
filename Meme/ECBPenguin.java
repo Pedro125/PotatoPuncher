@@ -5,16 +5,19 @@
 public class ECBPenguin extends Meme {
   
   private String urlToUnencryptedPenguin;
-  private String saveUrl;
+  private String saveLocation;
+  private String encryptionMode;
   
   /**
    * Constructs an instance of <code>ECBPenguin</code>.
    * 
+   * @param encryptionMode A String value for the type of Advanced Encryption Standard (AES) used
    * @param urlToUnencryptedPenguin A String value for the directory at which the original, unencrypted penguin is stored
    * @param saveUrl A String value for the directory to which the new, encrypted penguin will be saved
    */
-  public ECBPenguin(String urlToUnencryptedPenguin, String saveUrl) { 
+  public ECBPenguin(String encryptionMode, String urlToUnencryptedPenguin, String saveLocation) { 
     super("ECBPenguin", "N/A", 0.1, "N/A", "Image")
+    this.encryptionMode = encryptionMode;
     this.urlToUnencryptedPenguin = urlToUnencryptedPenguin;
     this.saveLocation = saveLocation;
   }
@@ -22,17 +25,17 @@ public class ECBPenguin extends Meme {
   /**
    *@return saveUrl
    */
-  public String getSaveUrl() {
-    return saveUrl;
+  public String getSaveLocation() {
+    return saveLocation;
   }
   
   /**
    * Sets a String value for the directory to which the new, encrypted penguin will be saved. Saves the penguin to the newly specified directory.
    *@params saveUrl
    */
-  public void setSaveUrl(String saveUrl) {
-    this.saveUrl = saveUrl;
-    //save(saveUrl);
+  public void setSaveUrl(String saveLocation) {
+    this.saveLocation = saveLocation;
+    //save(saveLocation);
   }
   
   /**
