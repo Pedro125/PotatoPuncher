@@ -16,7 +16,7 @@ public class ECBPenguin extends Meme {
    * @param saveUrl A String value for the directory to which the new, encrypted penguin will be saved
    */
   public ECBPenguin(String encryptionMode, String urlToUnencryptedPenguin, String saveLocation) { 
-    super("ECBPenguin", "N/A", 0.1, "N/A", "Image")
+    super("ECBPenguin", "N/A", 0.1, "N/A", "Image");
     this.encryptionMode = encryptionMode;
     this.urlToUnencryptedPenguin = urlToUnencryptedPenguin;
     this.saveLocation = saveLocation;
