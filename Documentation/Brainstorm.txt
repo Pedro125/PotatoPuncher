@@ -1,0 +1,19 @@
+Potato object
+    Contains collider and script that creates a hit event whenever a hand collider comes in contact
+    
+Leap Object
+    Sets position of both hand objects every frame to a visible hand
+        If one is not there it sets it behind the camera
+    
+Hand object
+    Position is set by the leap object every frame
+    
+Counter
+    Vars- Mega potato variable, potatoesPerPunch, and potatoesPerSec
+    Listening for hit event and adds potatoesPerPunch to potatoes
+    Listening for buy event and adds to potatoesPerSec
+    Every second (or whatever time unit) potatoesPerSec is added to potatoes
+    
+Shop
+    Contains a list of all buyable items
+    Clicking on a item buys it and calls a buy event with the number of potatoes per second produced by that item
